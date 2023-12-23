@@ -1,0 +1,32 @@
+Fruity Whiskey Sour
+2 whiskey
+1 lemon
+0.2 berry
+
+Bramble
+2 gin
+1 lemon
+0.5 berry
+
+Last Word riff
+1 gin
+1 lemon
+0.8 herb
+0.3 berry
+
+Final Ward riff
+1 whiskey
+1 lemon
+0.8 herb
+0.3 berry
+
+Boozed Up
+1.5 whiskey
+1.2 gin
+0.5 lemon
+0.2 berry
+
+Embittered
+1.5 whiskey
+1.5 gin
+0.5 herb
