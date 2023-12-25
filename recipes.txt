@@ -1,32 +1,32 @@
-Fruity Whiskey Sour
+Fruity Whiskey Sour #17
 2 whiskey
 1 lemon
 0.2 berry
 
-Bramble
+Bramble #27
 2 gin
 1 lemon
 0.5 berry
 
-Last Word riff
+Last Word riff #22
 1 gin
 1 lemon
 0.8 herb
 0.3 berry
 
-Final Ward riff
+Final Ward riff #5
 1 whiskey
 1 lemon
 0.8 herb
 0.3 berry
 
-Boozed Up
+Boozed Up #6
 1.5 whiskey
 1.2 gin
 0.5 lemon
 0.2 berry
 
-Embittered
+Embittered #26
 1.5 whiskey
 1.5 gin
 0.5 herb
