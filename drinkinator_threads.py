@@ -1,5 +1,5 @@
 import RPi.GPIO as GPIO
-import time
+import time, multiprocessing
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
@@ -28,13 +28,19 @@ def pour(ingredient, units): #2 sec. at full power = 1 unit
     time.sleep(units*2 + 0.15)
     GPIO.output(materials[ingredient], GPIO.LOW)
 
-def mix(drink):
-    for ingredient, units in recipes[drink].items():
-        pour(ingredient, units)
+def mix(recipe):
+    pool = []
+    for ingredient, units in recipe.items():
+        p = multiprocessing.Process(target = pour, args = (ingredient, units))
+        pool.append(p)
+    for p in pool:
+        p.start()
+    for p in pool:
+        p.join()
 
 while(1):
     for drink, pin in cookbook.items():
         if(GPIO.input(pin) == GPIO.HIGH):
-            mix(drink)
+            mix(recipes[drink])
             time.sleep(2)
             break
