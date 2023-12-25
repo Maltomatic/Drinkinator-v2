@@ -37,3 +37,4 @@ while(1):
         if(GPIO.input(pin) == GPIO.HIGH):
             mix(drink)
             time.sleep(2)
+            break
